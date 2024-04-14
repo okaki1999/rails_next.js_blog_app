@@ -7,6 +7,9 @@ Rails.application.routes.draw do
       namespace :user do
         resource :confirmations, only: [:update]
       end
+      namespace :user do
+        resource :confirmations, only: [:update]
+      end
       namespace :current do
         resource :user, only: [:show]
         resources :articles, only: [:index, :show, :create, :update]
